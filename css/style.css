@@ -2,10 +2,16 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'raleway', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
   color: #3a4457;
@@ -13,7 +19,7 @@ body {
 
 header {
   background-color: #ffe4c4;
-  text-align: center;
+  text-align: unset;
   padding: 10px 0;
   position: fixed;
   display: inline-block;
@@ -21,7 +27,7 @@ header {
 }
 
 main {
-  padding-top: 185px;
+  padding-top: 100px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -31,11 +37,14 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
+
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 500;
+
 }
 
 h3 {
@@ -55,11 +64,15 @@ h5 {
 
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
   color: #3a4457;
   text-decoration: none;
+  transition-duration: 0.2s;
+  transition-property: opacity;
   /* No underlining */
 }
 
@@ -72,6 +85,7 @@ a:hover,
 a:focus {
   color: #3a4457;
   text-decoration: underline;
+
   /* Underlining when hovering over a link */
 }
 
@@ -87,11 +101,12 @@ a:active {
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 10px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s opacity;
 }
 
 .button:hover {
@@ -132,6 +147,12 @@ a:active {
   /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid#4a4a4a;
@@ -144,11 +165,19 @@ a:active {
   width: 100%;
 }
 
+#hero span {
+  display: block;
+}
+
 #hero h1 {
   text-align: center;
   /* Centers text */
   margin: 0;
   padding: 0.67em 0;
+}
+
+#about-page h3 {
+  margin-top: 0;
 }
 
 .center {
@@ -162,7 +191,7 @@ a:active {
 nav>ul {
   list-style-type: none;
   padding: 0 5px;
-  width: 100%;
+  width: auto;
 }
 
 nav>ul>li {
@@ -193,4 +222,126 @@ footer>ul>a {
 footer ul>a>svg {
   width: 20px;
   height: 20px;
+}
+
+/*===============================
+Medium devices (640px or larger)
+=================================*/
+@media only screen and (min-width:640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+/*===============================
+Large devices (1240px or larger)
+=================================*/
+@media only screen and (min-width:1240px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+/*===============================
+X-large devices (1440px or larger)
+=================================*/
+@media only screen and (min-width:1440px) {}
+
+[class*="col-"] {
+  float: left;
+
+}
+
+.col-lg-8 {
+  width: 66.66%;
+}
+
+.col-lg-7 {
+  width: 58.33%;
+}
+
+.col-md-6 {
+  width: 50%;
+  padding: 10px;
+
+}
+
+.col-lg-5 {
+  width: 41.66%;
+}
+
+.col-xl-4 {
+  width: 33.33%;
+}
+.col-xl-3 {
+  width: 25%;
+}
+.com-xl-6{
+  width: 50%;
+}
+/*===========
+CSS Animation
+=============*/
+@keyframes color-change {
+  0% {
+    fill: #EDC655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
