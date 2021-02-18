@@ -12,15 +12,15 @@
   <title>Napachol UI Designer</title>
 </head>
 
-<body id="Munchy">
+<body id="munchy">
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
     <div class="container">
-        <a href="index.html" ><img src="img/profile/chol_brand_logo.png" class="logo" "center"></a>
+      <a href="index.html"><img src="img/profile/chol_brand_logo.png" class="logo"></a>
 
-      <nav>
-        <ul>
+      <nav float="center">
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about Napachol.html" target="_blank">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -33,18 +33,18 @@
   <main>
     <div>
       <!-- Open for whole section block -->
-      <div>
+      <div class="container">
         <!-- Open project intro section -->
-        <h1>Munchy | Recipe Application</h2>
+        <h1 style="padding-top:60px">Munchy | Recipe Application</h2>
 
           <picture>
             <source srcset="img/Munchy/intro@1x.png" media="(max-width:767px)">
             <img src="img/Munchy/intro@2x.png" alt="Munchy cover">
           </picture>
           <h3>A community for discovering the new cooking recipes for users who love to find and to share their interesting recipes as well as exchange their cuisine experience.</h3>
-          <div>
+          <div class="row">
             <!-- Open two row columns for problem and goal-->
-            <div>
+            <div class="column col-md-6">
               <!-- Open Problem column -->
               <h2>Problem</h2>
               <p>The Responsive Recipe Application targets the users who want to discover new recipes and give them the ideas they can make. Most of my participants don’t use the recipe app. They typically use other social platforms to inspire their
@@ -53,7 +53,7 @@
                 Forget their previous recipes.
                 Could not remember where the recipes are.</p>
             </div><!-- End Problem column -->
-            <div>
+            <div class="column col-md-6">
               <!-- Open Goal column -->
               <h2>Goal</h2>
               <p>To build the application based on users’ fundamental functionality and solving problems that users facing with their current cooking guides platform.</p>
@@ -61,14 +61,24 @@
           </div><!-- End two row columns for problem and goal-->
       </div><!-- End project intro section -->
 
-      <div>
+      <div class="container">
         <!-- Open Early section -->
+        <br>
+        <br>
         <h3>Early Stage
+          <br>
+          <br>
           <h2>My Process</h2>
-
-          <h3>User Personas</h3>
-          <p>After thoroughly researched the current products in the market, the first step of the design process was to interview with the potential users and created user personas based on my collected interviewees’ information, for example, their
-            commonalities, their behaviors as well as their goals and motivations.</p>
+          <div class="row">
+            <div class="column col-md-6" >
+              <h3>User Personas</h3>
+            </div>
+            <div class="column col-md-6">
+              <p>After thoroughly researched the current products in the market, the first step of the design process was to interview with the potential users and created user personas based on my collected interviewees’ information, for example,
+                their
+                commonalities, their behaviors as well as their goals and motivations.</p>
+            </div>
+          </div>
           <picture>
             <source srcset="img/Munchy/Personas@1x.png" media="(max-width:767px)">
             <img src="img/Munchy/Personas@2x.png" alt="Personas">
@@ -86,20 +96,24 @@
             I also created a user flow diagram showing how users can navigate through the app and access their desired page.</p>
 
       </div><!-- End Early section -->
-      <div>
+      <br>
+      <br>
+      <div class="container">
         <!-- Open Mid Stage -->
         <h3>Mid Stage</h3>
+        <br>
+        <br>
         <p>At this stage, I sketched low fidelity wireframe and made it into a prototype. Then, I further tested with users to ensure that my design is easy to navigate and logical.</p>
-        <div>
-          <!-- Open contains Roadblack three columns -->
-          <div>
+        <div class="row">
+          <!-- Open contains Roadblock three columns -->
+          <div class="column col-md-6">
             <h3>Roadblack</h3>
           </div>
-          <div>
+          <div class="column col-md-6">
             <h4> “how to design the screens to be as smooth and
               as logic as possible?”</h4>
           </div>
-          <div>
+          <div class="column col-lg-6">
             <p>At this point, I encountered some roadblocks while working on searching and filtering design flow. The questions emerged on how to design the screens to be as smooth and as logical as possible. This was noticeably a new process for me
               to
               overcome this problem. I went back to work on competitive analysis focusing on navigation structure and comparing different products to accomplish my design decision.
@@ -131,9 +145,13 @@
           with my user research that the clear and clean layout and image will attract their interest and convince them to cook.</p>
       </div>
       <!-- End Mid Stage -->
-      <div>
+      <br>
+      <br>
+      <div class="container">
         <!-- Open Final Stage -->
         <h3>Final Stage</h3>
+        <br>
+        <br>
         <p>To complete, I created the mockup to demonstrate how the screen will appear on different devices.</p>
         <picture>
           <source srcset="img/Munchy/Hi-fidelity@1x.png" media="(max-width:767px)">
@@ -163,27 +181,28 @@
           <img src="img/Munchy/Mockup_5@2x.png" alt="Mockup_mobile">
         </picture>
       </div><!-- End Final Stage -->
-      <div>
-        <!-- Open conclusion section contains two columns-->
-        <div>
-          <!-- Open Retrospective section -->
-          <h2>Retrospective</h2>
-          <p>The first challenge is to make the app differ from the existing apps in the market. After researching, I have observed that the essential functionalities have already been noticed in the market. For this reason, I dig deeper into the
-            demography research, trying to gather more user needs so as to create more explicit functionalities. 
+      <div class="container">
+        <div class="row">
+          <!-- Open conclusion section contains two columns-->
+          <div class="column col-md-6">
+            <!-- Open Retrospective section -->
+            <h2>Retrospective</h2>
+            <p>The first challenge is to make the app differ from the existing apps in the market. After researching, I have observed that the essential functionalities have already been noticed in the market. For this reason, I dig deeper into the
+              demography research, trying to gather more user needs so as to create more explicit functionalities. 
 
-            The second challenge is the user personas creation, which in my opinion can bring out the best through analyzing and brainstorming among team members rather than a single individual. This would generate a wider range of new ideas, more
-            fun to develop and unlock unsolved problems.</p>
-        </div><!-- End Retrospective section -->
+              The second challenge is the user personas creation, which in my opinion can bring out the best through analyzing and brainstorming among team members rather than a single individual. This would generate a wider range of new ideas, more
+              fun to develop and unlock unsolved problems.</p>
+          </div><!-- End Retrospective section -->
 
-        <div>
-          <!-- Open Future steps section -->
-          <h2>Future steps</h2>
-          <p>I wanted to make the platform be further more than just the recipe app but to be more community platform like where the app can be integrated with the local grocery, allowing the user to check the product availabilities or check on
-            promotion items.
-          </p>
-        </div><!-- End Future steps section -->
-      </div><!-- End conclusion section contains two columns-->
-
+          <div class="column col-md-6">
+            <!-- Open Future steps section -->
+            <h2>Future steps</h2>
+            <p>I wanted to make the platform be further more than just the recipe app but to be more community platform like where the app can be integrated with the local grocery, allowing the user to check the product availabilities or check on
+              promotion items.
+            </p>
+          </div><!-- End Future steps section -->
+        </div><!-- End conclusion section contains two columns-->
+      </div>
     </div><!-- End for whole section block -->
 
 
