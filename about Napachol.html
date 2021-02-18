@@ -12,15 +12,15 @@
   <title>Napachol UI Designer</title>
 </head>
 
-<body id="about">
+<body id="about-page">
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
+    <div class="container">
       <a href="index.html" ><img src="img/profile/chol_brand_logo.png" class="logo"></a>
 
-      <nav>
-        <ul>
+      <nav float="center">
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about Napachol.html" target="_blank">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -34,7 +34,7 @@
     <div>
       <!--Open first content block -->
       <div class="container">
-        <h1>About Me</h1>
+        <h1 style="padding-top: 60px">About Me</h1>
       </div>
     </div>
     <!-- End first content block -->
@@ -47,9 +47,9 @@
           <source srcset="img/profile/chol@1x.png" media="(max-width:767px)">
           <img src="img/profile/chol@2x.png" alt="Napachol img">
         </picture>
-        <div>
+        <div class="row">
           <!-- open row that holds (2) columns-->
-          <div>
+          <div class="column col-md-6 col-lg-7">
             <!-- open column for My story-->
             <h2>My Story</h2>
             <p>I am Napachol, a UI designer with a background in fine art, video editing, illustration, and marketing automation. Before bringing myself into UI design world, I’ve worked as a creative in a television production squad, shifted to be
@@ -64,11 +64,13 @@
           </div><!-- end column for My story -->
           <div>
             <!-- open column for Skills & Tools (light green biggest one)-->
-            <h2>Skills & Toos</h2>
-            <div>
+
+            <div class="container" "row">
               <!-- Open row that hold 2 sub-columns (Dark green)-->
-              <div>
+
+              <div class="col-md-6 col-lg-5">
                 <!-- Open column Relevent Skills (light green)-->
+                <h2>Skills & Toos</h2>
                 <h3>Relevant Skills</h3>
                 <ul>
                   <li>Branding</li>
@@ -80,7 +82,7 @@
                   <li>Frontend development</li>
                 </ul>
               </div><!-- End column Relevent Skills-->
-              <div>
+              <div class="col-md-6">
                 <!-- Open column Tools (light green)-->
                 <h3>Tools</h3>
                 <ul>
