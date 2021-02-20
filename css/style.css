@@ -6,6 +6,7 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 body {
@@ -38,6 +39,7 @@ h1 {
   font-size: 2.75em;
   font-weight: 700;
   text-align: center;
+  padding-top: 500px;
 
 }
 
@@ -173,7 +175,7 @@ a:active {
   text-align: center;
   /* Centers text */
   margin: 0;
-  padding: 0.67em 0;
+  padding: 1.5em 0;
 }
 
 #about-page h3 {
@@ -293,6 +295,36 @@ X-large devices (1440px or larger)
 .com-xl-6{
   width: 50%;
 }
+
+/*===============================
+small devices 320px to max 640px
+================================*/
+@media only screen and (max-width:640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    margin-top: 4px;
+  }
+  .col-md-6 {
+    width: 100%;
+    padding: 10px;
+
+  }
+  nav>ul {
+    list-style-type: none;
+    padding: 0 5px;
+    width: auto;
+    text-align: center;
+  }
+  .container-logo-center {
+    text-align: center;
+  }
+}
+
 /*===========
 CSS Animation
 =============*/
