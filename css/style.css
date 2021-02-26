@@ -39,7 +39,7 @@ h1 {
   font-size: 2.75em;
   font-weight: 700;
   text-align: center;
-  padding-top: 500px;
+
 
 }
 
@@ -175,7 +175,7 @@ a:active {
   text-align: center;
   /* Centers text */
   margin: 0;
-  padding: 1.5em 0;
+  padding: 3em 0;
 }
 
 #about-page h3 {
@@ -185,9 +185,12 @@ a:active {
 .center {
   text-align: center;
 }
-
+.icon{
+  background-color: #3a4457;
+}
 .logo {
   max-width: 100px;
+  min-width: 100px;
 }
 
 nav>ul {
@@ -196,9 +199,7 @@ nav>ul {
   width: auto;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
+
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -240,6 +241,9 @@ Medium devices (640px or larger)
     float: right;
     margin-top: 4px;
   }
+  nav>ul>li {
+    display: inline-block;
+  }
 }
 
 /*===============================
@@ -255,6 +259,9 @@ Large devices (1240px or larger)
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+  nav>ul>li {
+    display: inline-block;
   }
 }
 
@@ -314,14 +321,13 @@ small devices 320px to max 640px
     padding: 10px;
 
   }
-  nav>ul {
-    list-style-type: none;
-    padding: 0 5px;
-    width: auto;
-    text-align: center;
+.navtoggle li:not(:last-child){
+  display:none;
+}
+
   }
   .container-logo-center {
-    text-align: center;
+    text-align: left;
   }
 }
 
