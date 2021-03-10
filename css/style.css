@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'raleway', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -30,7 +30,11 @@ main {
   padding-top: 100px;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   line-height: 1.4;
 }
 
@@ -64,6 +68,7 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
+  text-align: center;
 }
 
 a {
@@ -71,18 +76,20 @@ a {
   text-decoration: none;
   transition-duration: 0.2s;
   transition-property: opacity;
+
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #ffffff;
+  color: #fff;
 }
 
 a:hover,
 a:focus {
   color: #3a4457;
   text-decoration: underline;
+
   /* Underlining when hovering over a link */
 }
 
@@ -93,45 +100,49 @@ a:active {
 
 .button {
   display: inline-block;
+
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #d27b63;
-  color: #ffffff;
+  background-color: #c15638;
+  color: #fff;
+
   /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 0;
   border-bottom: 2px solid #994c30;
+
   /* width of the border, type, color */
   transition-duration: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button:active {
   /* selected link */
-  color: #d27b63;
+  color: #c15638;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #c15638;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #c15638;
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
-  color: #ffffff;
+  background-color: #c15638;
+  color: #fff;
 }
 
 .button.contact:active {
   /* selected link */
-  color: #d27b63;
+  color: #c15638;
 }
 
 /* Layout stlying */
@@ -141,6 +152,7 @@ a:active {
 
 .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -168,6 +180,7 @@ a:active {
 
 #hero h1 {
   text-align: center;
+
   /* Centers text */
   margin: 0;
   padding: 1em 0;
@@ -190,21 +203,21 @@ a:active {
   min-width: 100px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0 5px;
   margin: 0;
   width: auto;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   color: #3a4457;
 }
 
@@ -213,12 +226,12 @@ footer {
   width: 100%;
 }
 
-footer>ul>a {
+footer > ul > a {
   display: inline-block;
   padding: 0 15px;
 }
 
-footer ul>a>svg {
+footer ul > a > svg {
   width: 20px;
   height: 20px;
 }
@@ -227,7 +240,8 @@ footer ul>a>svg {
   display: none;
 }
 
-.navtoggle,.navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -246,20 +260,21 @@ footer ul>a>svg {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-/*===============================
+/* ===============================
 Medium devices (640px or larger)
-=================================*/
-@media only screen and (min-width:641px) {
+================================= */
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -271,11 +286,11 @@ Medium devices (640px or larger)
     margin-top: 4px;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -288,10 +303,10 @@ Medium devices (640px or larger)
   }
 }
 
-/*===============================
+/* ===============================
 Large devices (1240px or larger)
-=================================*/
-@media only screen and (min-width:1240px) {
+================================= */
+@media only screen and (min-width: 1240px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -303,60 +318,59 @@ Large devices (1240px or larger)
     margin-top: 4px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 }
 
-/*===============================
+/* ===============================
 X-large devices (1440px or larger)
-=================================*/
-@media only screen and (min-width:1440px) {}
+================================= */
+@media only screen and (min-width: 1440px) {
+  [class*="col-"] {
+    float: left;
+  }
 
-[class*="col-"] {
-  float: left;
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    padding: 10px 20px;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-xl-4 {
+    width: 33.33%;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+  }
+
+  .com-xl-6 {
+    width: 50%;
+  }
 }
 
-.col-lg-8 {
-  width: 66.66%;
-}
-
-.col-lg-7 {
-  width: 58.33%;
-}
-
-.col-md-6 {
-  width: 50%;
-  padding: 10px;
-}
-
-.col-lg-5 {
-  width: 41.66%;
-}
-
-.col-xl-4 {
-  width: 33.33%;
-}
-
-.col-xl-3 {
-  width: 25%;
-}
-
-.com-xl-6 {
-  width: 50%;
-}
-
-/*===============================
+/* ===============================
 small devices 320px to max 640px
-================================*/
+================================ */
 
-
-/*===========
+/* ===========
 CSS Animation
-=============*/
+============= */
 @keyframes color-change {
   0% {
-    fill: #EDC655;
+    fill: #edc655;
   }
 
   50% {
